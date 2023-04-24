@@ -1,15 +1,19 @@
 import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import OnPressComponent from "./OnPressComponent";
 
 const image = { uri: "https://reactjs.org/logo-og.png" };
 
 export default function FullBGImageComponent() {
     return (
+        <>
         <View style={styles.container}>
         <ImageBackground source={image} style={styles.image}>
             <Text style={styles.text}>ivandjoh</Text>
         </ImageBackground>
         </View>
+            <OnPressComponent />
+        </>
     );
 }
 
